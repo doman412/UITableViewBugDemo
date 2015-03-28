@@ -15,6 +15,10 @@
 		C74F6F551AC7139A00B44AC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74F6F541AC7139A00B44AC9 /* Images.xcassets */; };
 		C74F6F581AC7139A00B44AC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C74F6F561AC7139A00B44AC9 /* LaunchScreen.xib */; };
 		C74F6F641AC7139B00B44AC9 /* UITableViewBugDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C74F6F631AC7139B00B44AC9 /* UITableViewBugDemoTests.m */; };
+		C74F6F701AC7154D00B44AC9 /* ShiftManagerVehiclePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C74F6F6F1AC7154D00B44AC9 /* ShiftManagerVehiclePickerVC.m */; };
+		C74F6F731AC7157E00B44AC9 /* ShiftManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C74F6F721AC7157E00B44AC9 /* ShiftManagerVC.m */; };
+		C74F6F761AC7160700B44AC9 /* ShiftManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C74F6F751AC7160700B44AC9 /* ShiftManager.m */; };
+		C74F6F791AC7164400B44AC9 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = C74F6F781AC7164400B44AC9 /* Vehicle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,14 @@
 		C74F6F5D1AC7139B00B44AC9 /* UITableViewBugDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITableViewBugDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74F6F621AC7139B00B44AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C74F6F631AC7139B00B44AC9 /* UITableViewBugDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableViewBugDemoTests.m; sourceTree = "<group>"; };
+		C74F6F6E1AC7154D00B44AC9 /* ShiftManagerVehiclePickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShiftManagerVehiclePickerVC.h; sourceTree = "<group>"; };
+		C74F6F6F1AC7154D00B44AC9 /* ShiftManagerVehiclePickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShiftManagerVehiclePickerVC.m; sourceTree = "<group>"; };
+		C74F6F711AC7157E00B44AC9 /* ShiftManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShiftManagerVC.h; sourceTree = "<group>"; };
+		C74F6F721AC7157E00B44AC9 /* ShiftManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShiftManagerVC.m; sourceTree = "<group>"; };
+		C74F6F741AC7160700B44AC9 /* ShiftManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShiftManager.h; sourceTree = "<group>"; };
+		C74F6F751AC7160700B44AC9 /* ShiftManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShiftManager.m; sourceTree = "<group>"; };
+		C74F6F771AC7164400B44AC9 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		C74F6F781AC7164400B44AC9 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,7 @@
 		C74F6F431AC7139A00B44AC9 /* UITableViewBugDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C74F6F6D1AC7151300B44AC9 /* DemoFiles */,
 				C74F6F481AC7139A00B44AC9 /* AppDelegate.h */,
 				C74F6F491AC7139A00B44AC9 /* AppDelegate.m */,
 				C74F6F4B1AC7139A00B44AC9 /* MasterViewController.h */,
@@ -122,6 +135,21 @@
 				C74F6F621AC7139B00B44AC9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C74F6F6D1AC7151300B44AC9 /* DemoFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C74F6F741AC7160700B44AC9 /* ShiftManager.h */,
+				C74F6F751AC7160700B44AC9 /* ShiftManager.m */,
+				C74F6F711AC7157E00B44AC9 /* ShiftManagerVC.h */,
+				C74F6F721AC7157E00B44AC9 /* ShiftManagerVC.m */,
+				C74F6F6E1AC7154D00B44AC9 /* ShiftManagerVehiclePickerVC.h */,
+				C74F6F6F1AC7154D00B44AC9 /* ShiftManagerVehiclePickerVC.m */,
+				C74F6F771AC7164400B44AC9 /* Vehicle.h */,
+				C74F6F781AC7164400B44AC9 /* Vehicle.m */,
+			);
+			name = DemoFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74F6F761AC7160700B44AC9 /* ShiftManager.m in Sources */,
 				C74F6F4A1AC7139A00B44AC9 /* AppDelegate.m in Sources */,
 				C74F6F4D1AC7139A00B44AC9 /* MasterViewController.m in Sources */,
 				C74F6F471AC7139A00B44AC9 /* main.m in Sources */,
+				C74F6F791AC7164400B44AC9 /* Vehicle.m in Sources */,
+				C74F6F701AC7154D00B44AC9 /* ShiftManagerVehiclePickerVC.m in Sources */,
 				C74F6F501AC7139A00B44AC9 /* DetailViewController.m in Sources */,
+				C74F6F731AC7157E00B44AC9 /* ShiftManagerVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UITableViewBugDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -362,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UITableViewBugDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
